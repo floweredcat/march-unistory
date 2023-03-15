@@ -1,0 +1,16 @@
+.button {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  padding: 10px 24px 6px;
+  gap: 10px;
+  background: #E75626;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: white;
+}

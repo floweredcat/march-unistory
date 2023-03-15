@@ -1,0 +1,15 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 197px;
+  height: 42px;
+  background-color: #5A5A5A;
+  border: 1px dashed #C7C7C7;
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  color: white
+}

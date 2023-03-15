@@ -5,9 +5,42 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #171719;
+  padding: 14px 64px;
+  width: calc(100vw - 128px);
+  height: calc(200vh - 28px);
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: inherit;        /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(255,255,255, 0.5);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #171719;  /* creates padding around scroll thumb */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+a {
+  appearance: none;
+  -moz-appearance: none;
+  text-decoration: none;
+  color: inherit
 }
