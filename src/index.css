@@ -1,3 +1,23 @@
+@font-face {
+  font-family: "Avenir Next Cyr";
+  font-weight: 400;
+  src: url("../src/Assets/Fonts/avenirnextcyr-medium.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Bebas Neue";
+  font-weight: 700;
+  src: url("../src/Assets/Fonts/bebasneuebold.ttf") format("ttf");
+  src: url("../src/Assets/Fonts/bebasneuebold.woff2") format("woff2");
+  src: url("../src/Assets/Fonts/bebasneuebold.woff") format("woff");
+}
+@font-face {
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  src: url("../src/Assets/Fonts/bebasneueregular.ttf") format("ttf");
+  src: url("../src/Assets/Fonts/bebasneueregular.woff2") format("woff2");
+  src: url("../src/Assets/Fonts/bebasneueregular.woff") format("woff");
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

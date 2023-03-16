@@ -2,7 +2,6 @@ import { RouteProps } from "react-router-dom";
 import { Header } from "../Components/Header/Header"
 
 interface ILayoutProps {
-  // location: RouteProps["location"];
   children: RouteProps["children"];
 }
 
