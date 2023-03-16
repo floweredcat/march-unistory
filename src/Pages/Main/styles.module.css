@@ -1,0 +1,7 @@
+.section {
+  margin-top: 156px;
+  display: flex;
+  flex-direction: row;
+  height: 532px;
+  position: relative;
+}

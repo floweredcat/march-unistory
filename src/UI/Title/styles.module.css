@@ -1,0 +1,39 @@
+.title {
+  display: block;
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 120%;
+  color: white;
+  background-clip: text;
+  width: 100%;
+  height: 288px;
+  position: relative;
+  /* z-index: 15; */
+  -ms-user-select: none; 
+		-moz-user-select: none; 
+		-webkit-user-select: none; 
+		user-select: none; 
+}
+
+.title::before {
+  content: "Explore Your own planet In our New metaverse";
+  position: absolute;
+  mix-blend-mode:lighten;
+  color: #E75626;
+  z-index: 12;
+  text-overflow: initial;
+  height: 288px;
+}
+
+.title span {
+  position: relative;
+  z-index: 99;
+  -webkit-text-stroke: 1px white;
+  color: #171719
+}
+
+.wrapper {
+  width: 1007px;
+}

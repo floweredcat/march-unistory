@@ -2,6 +2,8 @@
   font-family: "Avenir Next Cyr";
   font-weight: 400;
   src: url("../src/Assets/Fonts/avenirnextcyr-medium.ttf") format("ttf");
+  src: url("../src/Assets/Fonts/avenirnextcyr-medium.woff2") format("woff2");
+  src: url("../src/Assets/Fonts/avenirnextcyr-medium.woff") format("woff");
 }
 @font-face {
   font-family: "Bebas Neue";
@@ -58,9 +60,11 @@ button {
   cursor: pointer;
 }
 
-a {
+a, h1, h2, h3, h4, h5, h6 {
   appearance: none;
   -moz-appearance: none;
   text-decoration: none;
-  color: inherit
+  color: inherit;
+  margin: 0;
+  padding: 0;
 }

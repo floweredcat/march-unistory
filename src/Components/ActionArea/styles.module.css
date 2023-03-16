@@ -1,0 +1,76 @@
+.wrapper {
+  height: 446px;
+  width: 446px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 600px;
+  background-image: url("../../Assets/Images/planet_background.png");
+  border-radius: 50%;
+  top: 43px;
+}
+.wrapper::before {
+  width: 446px;
+  height: 446px;
+  border-radius: 50%;
+  content: " ";
+  background-color: #1E1E20;
+  display: block;
+}
+.round {
+  left:  631px;
+  top: 71px;
+  position: absolute;
+  display: block;
+  width: 384px;
+  height: 384px;
+  border: 1px solid #323232;
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.round::before {
+  content: " ";
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+  display: block;
+  width: 370px;
+  height: 370px;
+  border: 1px solid #323232;
+}
+
+.container {
+  background: #212124;
+  border-radius: 50%;
+  width: 532px;
+  height: 532px;
+  position: absolute;
+  left: 560px;
+  top: 0;
+}
+
+.container::before {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  width: 532px;
+  height: 532px;
+  background: #171719;
+  filter: blur(11px);
+}
+
+.action_area {
+  z-index: 99;
+  width: 532px;
+  height: 532px;
+  background-color: transparent;
+  position: absolute;
+  left: 560px;
+  border-radius: 50%;
+}

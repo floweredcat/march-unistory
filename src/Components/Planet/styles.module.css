@@ -1,0 +1,16 @@
+
+.image {
+  border-radius: 50%;
+  background-image: url("../../Assets/Images/planet.png");
+  background-size: contain;
+  transform: none;
+  width: 320px;
+  height: 322px;
+  position: absolute;
+  z-index: 10;
+  left: 663px;
+  top:102px;
+  bottom: 102px;
+  transition: all .5s ease-in-out .1s;
+  transform: translateX(0);
+}

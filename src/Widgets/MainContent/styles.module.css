@@ -1,0 +1,13 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper div:nth-of-type(2) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
