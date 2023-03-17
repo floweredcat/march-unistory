@@ -1,10 +1,56 @@
 .halfRound {
   height: 486px;
-  width: 243px;
+  width: 486px;
   position: absolute;
-  left: 823px;
+  left: 582px;
   top: 23px;
-  border-radius: 243px;
+  border-radius: 0 246px 246px 0;
   margin: 0;
-  padding: 0;;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-image: url("../../Assets/Images/half.svg");
+  background-position: right;
+  animation: 10s linear 0s normal none infinite running rot;
+  -webkit-animation: 10s linear 0s normal none infinite running rot;
+}
+
+.point {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: #E75626;
+  border-radius: 50%;
+  top: 20px;
+  left: 821px;
+}
+.point:nth-of-type(2n) {
+  top: 263px;
+  left: 1065px;
+}
+
+.point:nth-of-type(3n) {
+  top: 507px;
+  left: 821px;
+}
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
