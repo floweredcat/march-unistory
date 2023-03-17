@@ -1,0 +1,10 @@
+.halfRound {
+  height: 486px;
+  width: 243px;
+  position: absolute;
+  left: 823px;
+  top: 23px;
+  border-radius: 243px;
+  margin: 0;
+  padding: 0;;
+}

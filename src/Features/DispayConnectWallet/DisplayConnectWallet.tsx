@@ -1,11 +1,39 @@
-import { useEthers } from "@usedapp/core/dist/esm/src/hooks"
 import { Button } from "../../UI/Button/Button"
-import { config } from "../../App";
+import {useEffect, useState} from 'react'
+import { Link } from "../../UI/Link/Link";
+import styles from "./styles.module.css"
+
 
 export const DisplayConnectWallet = () => {
-  const { account, chainId, activateBrowserWallet } = useEthers()
-  if (chainId && !config?.readOnlyUrls?.[chainId]) {
-    return <p>Please use either Mainnet or Goerli testnet.</p>
+  const [isMetamaskInstalled, setIsMetamaskInstalled] = useState<boolean>(false);
+ const [account, setAccount] = useState<string | null>(null);
+
+ useEffect(() => {
+  if((window as any).ethereum){
+    //check if Metamask wallet is installed
+    setIsMetamaskInstalled(true);
   }
-  return <Button label={account ? account : "Connect metamask"} onClick={() => activateBrowserWallet()} />
+  
+},[]);
+async function connectWallet(): Promise<void> {
+  (window as any).ethereum
+    .request({
+        method: "eth_requestAccounts",
+    })
+    .then((accounts : string[]) => {
+        setAccount(accounts[0]);
+    })
+    .catch((error: any) => {
+        console.log(`Something went wrong: ${error}`);
+    });
+}
+
+  return account ?
+     <p className={styles.account}>{account}</p> : 
+     <Button 
+      label={"connect metamask"} 
+      onClick={isMetamaskInstalled ?
+      connectWallet :
+      () => {}} 
+      />
 }
