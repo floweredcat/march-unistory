@@ -1,0 +1,26 @@
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 108px;
+}
+
+.form_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
+  margin: 0;
+  margin-bottom: 18px;
+  color: #E75626;
+}
+
+.form_wrapper button {
+  width: fit-content
+}

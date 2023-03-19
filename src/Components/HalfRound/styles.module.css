@@ -1,17 +1,9 @@
-.halfRound {
-  height: 486px;
-  width: 486px;
+
+
+.circle {
   position: absolute;
-  left: 582px;
-  top: 23px;
-  border-radius: 0 246px 246px 0;
-  margin: 0;
-  padding: 0;
-  background-repeat: no-repeat;
-  background-image: url("../../Assets/Images/half.svg");
-  background-position: right;
-  animation: 10s linear 0s normal none infinite running rot;
-  -webkit-animation: 10s linear 0s normal none infinite running rot;
+  left: 825px;
+  top: 22px;
 }
 
 .point {
@@ -31,26 +23,4 @@
 .point:nth-of-type(3n) {
   top: 507px;
   left: 821px;
-}
-@keyframes rot {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(-180deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
-@-webkit-keyframes rot {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(-180deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
 }

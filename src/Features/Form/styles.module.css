@@ -1,0 +1,11 @@
+.form {
+  margin-top: 36px;
+}
+
+.form input {
+  margin-bottom: 18px;
+}
+
+.form input:last-of-type {
+  margin-bottom: 24px;
+}

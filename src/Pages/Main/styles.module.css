@@ -4,4 +4,5 @@
   flex-direction: row;
   height: 532px;
   position: relative;
+  justify-content: space-between;
 }
