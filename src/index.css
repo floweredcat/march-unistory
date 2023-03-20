@@ -30,9 +30,9 @@ body {
   background-color: #171719;
   padding: 14px 64px;
   width: calc(100vw - 128px);
-  height: calc(200vh - 28px);
   overflow-x: hidden;
   overflow-y: scroll;
+  padding-bottom: 80px;
 }
 
 body::-webkit-scrollbar {

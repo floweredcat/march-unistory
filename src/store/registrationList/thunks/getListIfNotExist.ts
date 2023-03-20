@@ -1,8 +1,13 @@
 import { registrationListSliceActions } from "../registrationList";
 import { normolizeEntities } from "../../helpers/normalizeEntites";
+import { AppDispatch } from "../../store";
+import { selectRegistrationListIds } from "../selectors";
 
-export const getListIfNotExist =
-  (dispatch: any) => {
+export const getListIfNotExist = () => (dispatch: AppDispatch, getState: any) => {
+    if (selectRegistrationListIds(getState())?.length > 0) {
+      return
+    }
+
     const options = {
       headers: {
         "accept": "application/json"
@@ -16,14 +21,13 @@ export const getListIfNotExist =
     fetch(url, options)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data)
-        // if (data.OK) {
-        //   dispatch(
-        //     registrationListSliceActions.successLoading(normolizeEntities(data.result))
-        //   );
-        // } else throw Error(data.error);
+        if (!data) {
+          throw new Error('catching error')
+        }
+        dispatch(registrationListSliceActions.successLoading(normolizeEntities(data.items)))
       })
       .catch((err) => {
+        console.log(err)
         dispatch(registrationListSliceActions.failLoading(err));
       });
   };

@@ -10,6 +10,10 @@
   flex-direction: column;
 }
 
+.table_wrapper {
+  width: 60vw;
+}
+
 .title {
   font-family: 'Bebas Neue';
   font-style: normal;
@@ -23,4 +27,37 @@
 
 .form_wrapper button {
   width: fit-content
+}
+
+
+.title {
+  font-family: 'Bebas Neue';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 120%;
+  margin-bottom: 35px;
+color: #FFFFFF;
+}
+
+.table_content {
+  /* display: block; */
+  max-height: 550px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding-right: 30px;
+}
+
+.table_content::-webkit-scrollbar {
+  width: 3px;               /* width of the entire scrollbar */
+}
+.table_content::-webkit-scrollbar-track {
+  background-color:  #FFFFFF;     /* color of the tracking area */
+  border: 1px solid #171719
+}
+.table_content::-webkit-scrollbar-thumb {
+  width: 3px;
+  border: 1px solid #E75626;
+  border-radius: 2px;
+  background-color: #E75626; 
 }

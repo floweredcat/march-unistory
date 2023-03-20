@@ -1,4 +1,4 @@
-export const normolizeEntities = (entities, idFieldName = "ID") => ({
+export const normolizeEntities = (entities, idFieldName = "id") => ({
   entities: entities.reduce((acc, entity) => {
     acc[entity[idFieldName]] = entity;
 

@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { nanoid } from "nanoid";
 
 const initialState = {
   entities: [],
@@ -6,7 +7,7 @@ const initialState = {
 };
 
 export const registrationListSlice = createSlice({
-  name: "users",
+  name: "registrationList",
   initialState,
   reducers: {
     startLoading: () => {
@@ -15,7 +16,7 @@ export const registrationListSlice = createSlice({
         status: "loading",
       };
     },
-    successLoading: (state, action) => {
+    successLoading: (_, action) => {
       const { entities, ids } = action.payload;
       return {
         entities,
@@ -29,9 +30,11 @@ export const registrationListSlice = createSlice({
         status: "fail",
       };
     },
-    addUser: (state) => {
-      return { ...state, entities: { ...state.entities } };
-    },
+    // addUser: (state, action) => {
+    //   const {adress, name, email} = action.payload
+    //   const id = nanoid()
+    //   return { ...state, entities: [ ...state.entities, {id, adress, name, email} ] };
+    // },
   },
 });
 

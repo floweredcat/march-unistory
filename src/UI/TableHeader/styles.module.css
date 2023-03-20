@@ -1,0 +1,29 @@
+.table_cell {
+  text-align: left;
+  height: 100%;
+  white-space: nowrap;
+  font-size: 12px;
+  line-height: 50px;
+  padding: 0 10px;
+  margin: 0;
+  color: white;
+  text-transform: uppercase;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.table_row {
+  border-bottom: 1px solid #FFFFFF;
+  display: grid;
+  grid-template-columns:
+  2fr 2.7fr 2.7fr;
+  margin-right: 30px;
+}
+
+thead .table_cell {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 50px;
+  color: #FFFFFF;
+}
