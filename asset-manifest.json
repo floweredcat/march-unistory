@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.e888294a.css",
-    "main.js": "/static/js/main.b8be2b12.js",
-    "static/js/787.5ef086cb.chunk.js": "/static/js/787.5ef086cb.chunk.js",
-    "static/media/planet.png": "/static/media/planet.024b886b2a36fd1fb86b.png",
-    "static/media/planet_background.png": "/static/media/planet_background.a899161da5b46cc08b71.png",
-    "static/media/avenirnextcyr-medium.ttf": "/static/media/avenirnextcyr-medium.179fa5daa949c68bbece.ttf",
-    "static/media/avenirnextcyr-medium.woff": "/static/media/avenirnextcyr-medium.b98881e50236fc513ed1.woff",
-    "static/media/bebasneuebold.ttf": "/static/media/bebasneuebold.7e8743efe82e2bd4ea19.ttf",
-    "static/media/bebasneueregular.ttf": "/static/media/bebasneueregular.b1570ed2d2c5ef330f84.ttf",
-    "static/media/avenirnextcyr-medium.woff2": "/static/media/avenirnextcyr-medium.a51b0ab457310d74ff05.woff2",
-    "static/media/bebasneueregular.woff": "/static/media/bebasneueregular.86232795d1652fc166cb.woff",
-    "static/media/bebasneuebold.woff": "/static/media/bebasneuebold.e9a1d1540e2dc38042c4.woff",
-    "static/media/bebasneueregular.woff2": "/static/media/bebasneueregular.0aaf8f475e9ff51c29bf.woff2",
-    "static/media/bebasneuebold.woff2": "/static/media/bebasneuebold.beb6b9047e5df8aa73cc.woff2",
-    "index.html": "/index.html",
-    "static/media/close.svg": "/static/media/close.497e7e5392983dc24c5b.svg",
-    "main.e888294a.css.map": "/static/css/main.e888294a.css.map",
-    "main.b8be2b12.js.map": "/static/js/main.b8be2b12.js.map",
-    "787.5ef086cb.chunk.js.map": "/static/js/787.5ef086cb.chunk.js.map"
+    "main.css": "/march-unistory/main/static/css/main.3716b7bb.css",
+    "main.js": "/march-unistory/main/static/js/main.fa444986.js",
+    "static/js/787.5ef086cb.chunk.js": "/march-unistory/main/static/js/787.5ef086cb.chunk.js",
+    "static/media/planet.png": "/march-unistory/main/static/media/planet.024b886b2a36fd1fb86b.png",
+    "static/media/planet_background.png": "/march-unistory/main/static/media/planet_background.a899161da5b46cc08b71.png",
+    "static/media/avenirnextcyr-medium.ttf": "/march-unistory/main/static/media/avenirnextcyr-medium.179fa5daa949c68bbece.ttf",
+    "static/media/avenirnextcyr-medium.woff": "/march-unistory/main/static/media/avenirnextcyr-medium.b98881e50236fc513ed1.woff",
+    "static/media/bebasneuebold.ttf": "/march-unistory/main/static/media/bebasneuebold.7e8743efe82e2bd4ea19.ttf",
+    "static/media/bebasneueregular.ttf": "/march-unistory/main/static/media/bebasneueregular.b1570ed2d2c5ef330f84.ttf",
+    "static/media/avenirnextcyr-medium.woff2": "/march-unistory/main/static/media/avenirnextcyr-medium.a51b0ab457310d74ff05.woff2",
+    "static/media/bebasneueregular.woff": "/march-unistory/main/static/media/bebasneueregular.86232795d1652fc166cb.woff",
+    "static/media/bebasneuebold.woff": "/march-unistory/main/static/media/bebasneuebold.e9a1d1540e2dc38042c4.woff",
+    "static/media/bebasneueregular.woff2": "/march-unistory/main/static/media/bebasneueregular.0aaf8f475e9ff51c29bf.woff2",
+    "static/media/bebasneuebold.woff2": "/march-unistory/main/static/media/bebasneuebold.beb6b9047e5df8aa73cc.woff2",
+    "index.html": "/march-unistory/main/index.html",
+    "static/media/close.svg": "/march-unistory/main/static/media/close.497e7e5392983dc24c5b.svg",
+    "main.3716b7bb.css.map": "/march-unistory/main/static/css/main.3716b7bb.css.map",
+    "main.fa444986.js.map": "/march-unistory/main/static/js/main.fa444986.js.map",
+    "787.5ef086cb.chunk.js.map": "/march-unistory/main/static/js/787.5ef086cb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e888294a.css",
-    "static/js/main.b8be2b12.js"
+    "static/css/main.3716b7bb.css",
+    "static/js/main.fa444986.js"
   ]
 }
