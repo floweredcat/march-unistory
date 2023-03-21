@@ -1,0 +1,30 @@
+.section {
+  margin-top: 156px;
+  display: flex;
+  flex-direction: row;
+  height: 532px;
+  position: relative;
+  justify-content: space-between;
+}
+
+.title {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+/* identical to box height, or 58px */
+
+
+  color: #FFFFFF;
+  padding-top: 110px;
+  padding-bottom: 12px;
+}
+
+.planet_wrapper {
+  position: absolute;
+  z-index: 99;
+  top: 110px;
+  left: calc(100vw - 900px);
+  background-color: transparent;
+}

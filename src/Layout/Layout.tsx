@@ -1,13 +1,13 @@
-import { RouteProps } from "react-router-dom";
-import { Header } from "../Components/Header/Header"
+import { type RouteProps } from "react-router-dom";
+import { Header } from "../Components/Header/Header";
 
-interface ILayoutProps {
+type ILayoutProps = {
   children: RouteProps["children"];
-}
+};
 
-export const Layout: React.FC<ILayoutProps> = (props: ILayoutProps) => {
-  return <>
-  <Header />
-  {props.children}
+export const Layout: React.FC<ILayoutProps> = (props: ILayoutProps) => (
+  <>
+    <Header />
+    {props.children}
   </>
-}
+);

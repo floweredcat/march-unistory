@@ -1,13 +1,13 @@
-import styles from "./styles.module.css"
+import styles from "./styles.module.css";
 
-// type PropType = {
+// Type PropType = {
 //   text: string;
 // }
 
-export const Title = () => {
-  return (
+export const Title = () => (
   <div className={styles.wrapper}>
-    <h1 className={styles.title}>Explore Your own planet In <span>our New</span> metaverse</h1>
+    <h1 className={styles.title}>
+      Explore Your own planet In <span>our New</span> metaverse
+    </h1>
   </div>
-  )
-}
+);

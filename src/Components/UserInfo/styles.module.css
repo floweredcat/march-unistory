@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 8px;
+}
+
+.text {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+  color: #E75626;
+  margin: 0;
+}
+
+.label {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+
+.wrapper {
+  margin-top: 36px;
+}
+
+.wrapper .container {
+  margin-bottom: 18px;
+}
+
+.wrapper .container:last-of-type {
+  margin-bottom: 24px;
+}

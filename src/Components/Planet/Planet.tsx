@@ -1,7 +1,3 @@
-import styles from "./styles.module.css"
+import styles from "./styles.module.css";
 
-export const Planet = () => {
-  return (
-      <div className={styles.image} id={"planet"}/>  
-  )
-}
+export const Planet = () => <div className={styles.image} id={"planet"} />;

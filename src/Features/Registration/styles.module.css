@@ -22,6 +22,15 @@
   line-height: 120%;
   margin: 0;
   margin-bottom: 18px;
+  color: white;
+}
+
+.form_title {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
   color: #E75626;
 }
 

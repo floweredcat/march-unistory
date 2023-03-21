@@ -14,3 +14,7 @@
   text-transform: uppercase;
   color: white;
 }
+
+.button:disabled {
+  opacity: 0.5;
+}
