@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/march-unistory/static/css/main.6ea2aab5.css",
-    "main.js": "/march-unistory/static/js/main.b0dd1def.js",
+    "main.css": "/march-unistory/static/css/main.ddb85c7c.css",
+    "main.js": "/march-unistory/static/js/main.ac813132.js",
     "static/js/787.5ef086cb.chunk.js": "/march-unistory/static/js/787.5ef086cb.chunk.js",
     "static/media/planet.png": "/march-unistory/static/media/planet.024b886b2a36fd1fb86b.png",
     "static/media/planet_background.png": "/march-unistory/static/media/planet_background.a899161da5b46cc08b71.png",
@@ -16,12 +16,12 @@
     "static/media/bebasneuebold.woff2": "/march-unistory/static/media/bebasneuebold.beb6b9047e5df8aa73cc.woff2",
     "index.html": "/march-unistory/index.html",
     "static/media/close.svg": "/march-unistory/static/media/close.497e7e5392983dc24c5b.svg",
-    "main.6ea2aab5.css.map": "/march-unistory/static/css/main.6ea2aab5.css.map",
-    "main.b0dd1def.js.map": "/march-unistory/static/js/main.b0dd1def.js.map",
+    "main.ddb85c7c.css.map": "/march-unistory/static/css/main.ddb85c7c.css.map",
+    "main.ac813132.js.map": "/march-unistory/static/js/main.ac813132.js.map",
     "787.5ef086cb.chunk.js.map": "/march-unistory/static/js/787.5ef086cb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ea2aab5.css",
-    "static/js/main.b0dd1def.js"
+    "static/css/main.ddb85c7c.css",
+    "static/js/main.ac813132.js"
   ]
 }
