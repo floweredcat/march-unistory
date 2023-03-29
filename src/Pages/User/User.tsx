@@ -6,6 +6,7 @@ import styles from "./styles.module.css";
 
 export const User = () => {
   const { userData } = useParams();
+  console.log(userData);
   // @ts-expect-error
   const { username, email, address } = JSON.parse(userData);
   return (

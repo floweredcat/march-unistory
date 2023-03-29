@@ -7,14 +7,21 @@ import { Button } from "../../UI/Button/Button";
 import { getListIfNotExist } from "../../Store/registrationList/thunks/getListIfNotExist";
 import { Table } from "../../Components/Table/Table";
 import { useDispatch, useSelector } from "react-redux";
-import { selectRegistrationList } from "../../Store/registrationList/selectors";
+import {
+  selectIsRegistrationListEdited,
+  selectRegistrationList,
+} from "../../Store/registrationList/selectors";
 import { TableRow } from "../../UI/TableRow/TableRow";
 import { nanoid } from "@reduxjs/toolkit";
 import { TableHeader } from "../../UI/TableHeader/TableHeader";
 import { UserInfo } from "../../Components/UserInfo/UserInfo";
 import { useNavigate } from "react-router-dom";
-const TABLE_HEADERS = ["NAME", "EMAIL", "ADDRESS"];
-const INPUT_PLACEHOLDER = "We will display your name in participation list ";
+import { registrationListSliceActions } from "../../Store/registrationList/registrationList";
+import {
+  INPUT_PLACEHOLDER,
+  TABLE_HEADERS,
+} from "../../Assets/Constants/constants";
+import validator from "validator";
 
 export const Registration = () => {
   const navigate = useNavigate();
@@ -23,20 +30,38 @@ export const Registration = () => {
   useEffect(() => {
     dispatch(getListIfNotExist());
   }, [dispatch]);
-  const [isDisplayTable, setIsDisplayTable] = useState(false);
-  const [isDisplayForm, setIsDisplayForm] = useState(true);
   const tableData = useSelector((state) => selectRegistrationList(state));
-  const [users, setUsers] = useState(tableData);
+  const isTableDisplay = useSelector((state) =>
+    selectIsRegistrationListEdited(state)
+  );
+  const [isDisabled, setIsdisabled] = useState(false);
+
   const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setUsers(
-      [{ address, username: form.name, email: form.email }].concat(tableData)
+    dispatch(
+      registrationListSliceActions.addUser([
+        {
+          address,
+          username: form.username,
+          email: form.email,
+        },
+      ])
     );
-    setIsDisplayTable(true);
-    setIsDisplayForm(false);
+    setIsdisabled(true);
   };
 
-  const [form, setForm] = useState({ name: "", email: "" });
+  const [form, setForm] = useState({ username: "", email: "" });
+  useEffect(() => {
+    if (
+      !validator.isEmail(form.email) ||
+      validator.isEmpty(form.email) ||
+      validator.isEmpty(form.username) ||
+      !localStorage.address
+    ) {
+      setIsdisabled(true);
+    } else setIsdisabled(false);
+  }, [form.username, form.email]);
+  const { username, email } = form;
   const handleChange = (e: any) => {
     const { name, value } = e.target;
     setForm((prevState) => ({
@@ -46,9 +71,8 @@ export const Registration = () => {
   };
 
   const handleDelete = () => {
-    setUsers(users.slice(1));
-    setIsDisplayForm(true);
-    setForm({ name: "", email: "" });
+    dispatch(registrationListSliceActions.deleteUser());
+    setForm({ username: "", email: "" });
   };
 
   return (
@@ -56,17 +80,17 @@ export const Registration = () => {
       <div className={styles.form_wrapper}>
         <span className={styles.form_title}>Beta test registration</span>
         <TextContent />
-        {isDisplayForm ? (
+        {tableData[0]?.id ? (
           <Form onSubmit={onSubmit}>
             <>
               <Input
-                value={form.name}
+                value={username}
                 setValue={handleChange}
-                name={"name"}
+                name={"username"}
                 placeholder={INPUT_PLACEHOLDER}
               />
               <Input
-                value={form.email}
+                value={email}
                 setValue={handleChange}
                 name={"email"}
                 placeholder={INPUT_PLACEHOLDER}
@@ -74,16 +98,19 @@ export const Registration = () => {
             </>
           </Form>
         ) : (
-          <UserInfo username={form.name} email={form.email} />
+          <UserInfo
+            username={tableData[0]?.username}
+            email={tableData[0]?.email}
+          />
         )}
         <Button
           onClick={onSubmit}
           type="submit"
-          label={isDisplayForm ? "Get early access" : "List me to the table"}
-          disabled={!isDisplayForm}
+          label={tableData[0]?.id ? "Get early access" : "List me to the table"}
+          disabled={isDisabled}
         />
       </div>
-      {isDisplayTable && (
+      {isTableDisplay && (
         <div className={styles.table_wrapper}>
           <h2 className={styles.title}>
             Participation listing (enable only for participants)
@@ -94,13 +121,13 @@ export const Registration = () => {
                 <TableHeader headers={TABLE_HEADERS} />
               </thead>
               <tbody className={styles.table_content}>
-                {users.map((el: any) => (
+                {tableData?.map((el: any) => (
                   <TableRow
                     data={el}
                     key={nanoid()}
                     handleDelete={handleDelete}
                     onclick={() => {
-                      navigate(`/user/${JSON.stringify(el)}`);
+                      navigate(`user/${JSON.stringify(el)}`);
                     }}
                   />
                 ))}

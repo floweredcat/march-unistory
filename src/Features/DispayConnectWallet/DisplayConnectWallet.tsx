@@ -27,8 +27,8 @@ export const DisplayConnectWallet = () => {
       });
   }
 
-  return account ? (
-    <p className={styles.account}>{account}</p>
+  return localStorage.address ? (
+    <p className={styles.account}>{localStorage.address}</p>
   ) : (
     <Button
       label={"connect metamask"}

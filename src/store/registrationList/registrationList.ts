@@ -28,6 +28,21 @@ export const registrationListSlice = createSlice({
 				status: 'fail',
 			};
 		},
+		addUser(state, action) {
+			const userData = action.payload;
+
+			return {
+				...state,
+				entities: userData.concat(state.entities),
+				status: "edited"
+			};
+		},
+		deleteUser(state) {
+			return {
+				...state,
+				entities: state.entities.slice(1)
+			};
+		},
 	},
 });
 

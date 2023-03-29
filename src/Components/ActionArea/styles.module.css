@@ -66,7 +66,7 @@
 }
 
 .action_area {
-  z-index: 99;
+  z-index: 90;
   width: 532px;
   height: 532px;
   background-color: transparent;

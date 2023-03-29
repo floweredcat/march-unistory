@@ -29,10 +29,10 @@
   display: grid;
   grid-template-columns:
   2fr 2.7fr 2.7fr;
+  cursor: pointer;
 }
 
-.table_row:hover .table_cell {
-  cursor: pointer;
+.table_cell__newbest {
   color: #E75626;
 }
 

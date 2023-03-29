@@ -1,0 +1,53 @@
+.popup_wrapper {
+  position: fixed;
+  z-index: 88;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 98;
+}
+
+.popup {
+  z-index: 99;
+  position: absolute;
+  width: 422px;
+  height: 295px;
+  background: #262628;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.title {
+  display: block;
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
+  color: #E75626;
+  max-width: 250px;
+}
+
+.text {
+  font-family: 'Avenir Next Cyr';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: #FFFFFF;
+  max-width: 320px;
+}
+
+.text span {
+  color: #E75626;
+}
+

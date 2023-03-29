@@ -10,14 +10,23 @@
   width: 100%;
   height: 288px;
   position: relative;
-  /* z-index: 15; */
-  -ms-user-select: none; 
-		-moz-user-select: none; 
-		-webkit-user-select: none; 
-		user-select: none; 
+  z-index: 15;
+  width: 100%;
 }
 
-.title::before {
+/* .wrapper .title {
+  width: 1130px;
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 120%;
+  letter-spacing: 2px;
+  color: transparent;
+ } */
+
+
+/* .title::before {
   content: "Explore Your own planet In our New metaverse";
   position: absolute;
   mix-blend-mode:lighten;
@@ -25,15 +34,15 @@
   z-index: 12;
   text-overflow: initial;
   height: 288px;
-}
+} */
 
 .title span {
   position: relative;
-  z-index: 99;
+  z-index: 90;
   -webkit-text-stroke: 1px white;
   color: #171719
 }
 
 .wrapper {
-  width: 1007px;
+  width: 1007pxs;
 }

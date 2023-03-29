@@ -11,8 +11,8 @@ function App() {
     <Provider store={store}>
       <Layout>
         <Routes>
-          <Route index element={<Main />} />
-          <Route path="/user/:userData" element={<User />} />
+          <Route path="march-unistory" index element={<Main />} />
+          <Route path="march-unistory/user/:userData" element={<User />} />
         </Routes>
       </Layout>
     </Provider>

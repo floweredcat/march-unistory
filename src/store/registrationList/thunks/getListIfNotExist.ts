@@ -1,11 +1,9 @@
-
-import {normolizeEntities} from '../../helpers/normalizeEntites';
 import {type AppDispatch} from '../../store';
 import {registrationListSliceActions} from '../registrationList';
-import {selectRegistrationListIds} from '../selectors';
+import {selectRegistrationList} from '../selectors';
 
 export const getListIfNotExist = () => (dispatch: AppDispatch, getState: any) => {
-	if (selectRegistrationListIds(getState())?.length > 0) {
+	if (selectRegistrationList(getState())?.length > 0) {
 		return;
 	}
 
